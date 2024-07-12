@@ -1,0 +1,124 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    max-width: 2400px;
+    margin: auto;
+    padding: 20px;
+    background: #331b49;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #9B51E0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #9B51E0;
+    color: #121212;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    border-bottom: 2px solid #9B51E0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #9B51E0;
+}
+
+.skill-category, .project {
+    background: #1E1E1E;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.skill-category h3, .project h3 {
+    margin-top: 0;
+}
+
+.skill-category ul, .project ul, #education-certificates ul, #hobbies ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category ul li, .project ul li, #education-certificates ul li, #hobbies ul li {
+    background: #333;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.skill-category p, .project p {
+    margin-top: 10px;
+}
+
+/* Link Styles */
+a {
+    color: #9B51E0;
+    text-decoration: none;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #331b49;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    display: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background-color: #9B51E0;
+    color: black;
+    transform: translateY(-5px);
+}
