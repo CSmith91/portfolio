@@ -17,3 +17,11 @@ function toggleCollapse(element) {
         content.style.display = "none";
     }
 }
+
+document.addEventListener('mousemove', function(e) {
+    const header = document.querySelector('header');
+    const x = e.clientX / window.innerWidth;
+    const y = e.clientY / window.innerHeight;
+    
+    header.style.background = `radial-gradient(circle at ${x * 100}% ${y * 100}%, #9B51E0, #331b49)`;
+});

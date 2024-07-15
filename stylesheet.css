@@ -18,12 +18,15 @@ header {
     max-width: 2400px;
     margin: auto;
     padding: 20px;
-    background: #331b49;
+    background: radial-gradient(circle at 50% 50%, #9B51E0, #331b49);
+    background-size: 200% 200%;
     color: white;
     padding: 20px 0;
     text-align: center;
     border-bottom: 2px solid #9B51E0;
+    transition: background 0.3s ease;
 }
+
 
 header h1 {
     margin: 0;

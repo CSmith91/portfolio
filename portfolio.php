@@ -1,28 +1,10 @@
 <!DOCTYPE html> 
 <html lang="en"> 
-    <head> 
-        <meta charset="UTF-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Portfolio</title> 
-        <link rel="stylesheet" href="stylesheet.css">
-        <!-- <link rel="icon" href="../images/favicon_io/favicon.ico" type="image/x-icon">  -->
-    </head> 
+    <?php 
+    $pageTitle = "Portfolio";
+    include 'header.php'; 
+    ?>
     <body>
-        <header>
-            <h1>My Portfolio</h1>
-            <p><i>Note that the root of this domain is blank as it is sometimes used for building websites 'offline' while a pre-existing live website is running for less technical clients to view.</i></p>
-            <nav>
-                <ul>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#education-certificates">Education & Certificates</a></li>
-                    <li><a href="#personal-projects">Personal Projects</a></li>
-                    <li><a href="#hobbies">Hobbies</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                </ul>
-            </nav>
-        </header>
-
         <main>
             <section id="skills">
                 <h2>Skills</h2>
@@ -111,6 +93,7 @@
                 <h2>Projects</h2>
                 <div class="project">
                     <h3>Ibbett Mosely Auctions</h3>
+                    <p>This site is live and you can view it <a href="https://ibbettmoselyauctions.co.uk/">here</a>.</p>
                     <p>The goal was to create a website that displayed the various lots that the client puts to auction in a catalogue style. The requirements were:</p>
                     <ul>
                         <li>Linking each lot to its respective auction</li>
@@ -190,11 +173,6 @@
                     <li>Board Games - Eldritch Horror, Gloomhaven, Root, Brass (Birmingham)</li>
                     <li>Archery - I have my own composite bow and shoot left-handed, and always bruise my right forearm on my first shot and proceed to never do it again (until next session).</li>
                 </ul>
-            </section>
-
-            <section id="contact">
-                <h2>Contact Me</h2>
-                <!-- php form goes here -->
             </section>
         </main>
 
