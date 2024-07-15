@@ -81,12 +81,12 @@ section h2 {
     margin-top: 0;
 }
 
-.skill-category ul, .project ul, #education-certificates ul, #hobbies ul {
+.skill-category ul, .project ul, #education-certificates ul, #hobbies ul, #personal-projects ul{
     list-style: none;
     padding: 0;
 }
 
-.skill-category ul li, .project ul li, #education-certificates ul li, #hobbies ul li {
+.skill-category ul li, .project ul li, #education-certificates ul li, #hobbies ul li, #personal-projects ul li {
     background: #333;
     margin-bottom: 10px;
     padding: 10px;
@@ -95,6 +95,10 @@ section h2 {
 
 .skill-category p, .project p {
     margin-top: 10px;
+}
+
+#home-link a{
+    color: white;
 }
 
 /* Link Styles */
@@ -124,4 +128,50 @@ a {
     background-color: #9B51E0;
     color: black;
     transform: translateY(-5px);
+}
+
+/* Styles for the container to ensure it takes up the full width of its parent */
+.image-banner-container {
+    width: 100%; /* Adjust this if you have a specific container width */
+    margin: auto; /* Centre it within the parent */
+    overflow: hidden; /* Ensure no overflow if the image is too large */
+}
+
+/* Styles for the image to fit the container */
+.image-banner-container img {
+    width: 100%; /* Make the image take up the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any unwanted space below the image */
+}
+
+/* Styles for the image container */
+.image-container {
+    display: grid;
+    place-items: center; /* Center both horizontally and vertically */
+}
+
+/* Styles for the image */
+.image-container img {
+    max-width: 100%; /* Ensure image scales to fit container */
+    height: auto;    /* Maintain aspect ratio */
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+/* Styles for the paragraph container */
+.paragraph-container {
+    /* Ensure container takes full width or adjust as needed */
+    width: 100%;
+}
+
+/* Styles for the paragraphs */
+.paragraph-container p {
+    text-align: justify; /* Justify text alignment */
+    margin: 0 0 1em 0;   /* Add margin below each paragraph */
+    line-height: 1.6;    /* Optional: improves readability */
+}
+
+/* Optional: Add some padding to the container */
+.paragraph-container {
+    padding: 20px; /* Adjust as needed */
 }

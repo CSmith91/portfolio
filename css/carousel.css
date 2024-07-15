@@ -1,0 +1,45 @@
+/* Basic styling for the carousel container */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Adjust based on your requirements */
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Styling for the images within the carousel */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    /* Ensure the carousel can handle images without distortion */
+    width: 100%;
+}
+
+.carousel img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+    flex-shrink: 0;
+}
+
+/* Styling for the navigation buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+    font-size: 24px;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
