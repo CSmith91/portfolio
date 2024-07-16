@@ -12,14 +12,11 @@
 
 /* Style the form */
 form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1200px;
-    background-color: #1E1E1E; /* Form background */
+    background: #1E1E1E;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 /* Style form elements */
@@ -36,7 +33,7 @@ form textarea {
     padding: 10px;
     border: 1px solid #9B51E0;
     border-radius: 4px;
-    width: 100%;
+    width: 98%;
     background-color: rgb(63, 63, 63);
     color: white;
 }
@@ -54,5 +51,9 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background-color: #9B51E0;
+    background-color: #C707E3;
+}
+
+h3 {
+    margin-bottom: 7%;
 }

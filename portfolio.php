@@ -2,7 +2,7 @@
 <html lang="en"> 
     <?php 
     $pageTitle = "Portfolio";
-    include 'header.php'; 
+    include 'header.php';
     ?>
     <body>
         <main>
@@ -15,7 +15,7 @@
                             <li>HTML</li>
                             <li>JS</li>
                             <li>CSS</li>
-                            <li>PHP</li>
+                            <li>php</li>
                             <li>ReactJS</li>
                             <li>SQL</li>
                             <li>HubL (A markdown language of HTML crossed with JS)</li>
@@ -219,6 +219,11 @@
             &#8679; <!-- Unicode for up arrow -->
         </a>
         <script src="./js/portfolio.js"></script>
+
+        <footer><?php    
+        include 'footer.php';
+        ?>
+        </footer>
 
     </body> 
     </html>

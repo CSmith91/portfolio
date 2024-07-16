@@ -26,7 +26,7 @@
         
         // Send the email
         if (mail($to, $subject, $body, $headers)) {
-            echo "Email successfully sent to $to";
+            echo "Email sent successfully";
         } else {
             echo "Failed to send email.";
         }
@@ -55,10 +55,15 @@
         </section>   
     </main>
 
-        <a href="#top" class="back-to-top" id="backToTop">
-            &#8679; <!-- Unicode for up arrow -->
-        </a>
-        <script src="./js/portfolio.js"></script>
+    <a href="#top" class="back-to-top" id="backToTop">
+        &#8679; <!-- Unicode for up arrow -->
+    </a>
+    <script src="./js/portfolio.js"></script>
+
+    <footer><?php    
+    include 'footer.php';
+    ?>
+    </footer>
 
     </body> 
 </html>

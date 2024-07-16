@@ -5,6 +5,7 @@
     <title><?php echo $pageTitle; ?></title> 
     <link rel="stylesheet" href="./css/stylesheet.css">
     <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="icon" href="./images/favicon_io/favicon.ico" type="image/x-icon">
 </head> 
 <header>
     <h1 id="home-link"><a href="./portfolio.php">Chris Smith's Portfolio</a></h1>

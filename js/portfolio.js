@@ -21,10 +21,12 @@ function toggleCollapse(element) {
 // this follows the mouse on the header
 document.addEventListener('mousemove', function(e) {
     const header = document.querySelector('header');
+    const footer = document.querySelector('footer');
     const x = e.clientX / window.innerWidth;
     const y = e.clientY / window.innerHeight;
     
     header.style.background = `radial-gradient(circle at ${x * 100}% ${y * 100}%, #9B51E0, #331b49)`;
+    footer.style.background = `radial-gradient(circle at ${x * 100}% ${y * 100}%, #9B51E0, #331b49)`;
 });
 
 // this is for the image carousel

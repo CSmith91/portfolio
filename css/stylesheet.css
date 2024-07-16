@@ -14,7 +14,7 @@ main {
     padding: 20px;
 }
 
-header {
+header, footer {
     max-width: 2400px;
     margin: auto;
     padding: 20px;
@@ -23,8 +23,17 @@ header {
     color: white;
     padding: 20px 0;
     text-align: center;
-    border-bottom: 2px solid #9B51E0;
     transition: background 0.3s ease;
+}
+
+/* Specific styles for header */
+header {
+    border-bottom: 2px solid #9B51E0;
+}
+
+/* Specific styles for footer */
+footer {
+    border-top: 2px solid #9B51E0;
 }
 
 
@@ -53,7 +62,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #9B51E0;
+    background: #C707E3;
     color: #121212;
 }
 
@@ -106,6 +115,9 @@ a {
     color: #9B51E0;
     text-decoration: none;
 }
+a:hover {
+    color: #C707E3;
+}
 
 .back-to-top {
     position: fixed;
@@ -125,7 +137,7 @@ a {
 }
 
 .back-to-top:hover {
-    background-color: #9B51E0;
+    background-color: #C707E3;
     color: black;
     transform: translateY(-5px);
 }

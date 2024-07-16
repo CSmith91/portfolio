@@ -33,3 +33,10 @@
 .chapter-text p.drop-cap{
     text-indent: 0em;
 }
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color:#9B51E0  ;
+    border-top: 2px solid #C707E3;
+}
