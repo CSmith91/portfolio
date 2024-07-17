@@ -78,7 +78,7 @@ section h2 {
     color: #9B51E0;
 }
 
-.skill-category, .project {
+.skill-category, .project, .case-studies, .sub-section {
     background: #1E1E1E;
     padding: 20px;
     margin-bottom: 20px;
@@ -90,12 +90,12 @@ section h2 {
     margin-top: 0;
 }
 
-.skill-category ul, .project ul, #education-certificates ul, #hobbies ul, #personal-projects ul{
+.skill-category ul, .project ul, #education-certificates ul, #hobbies ul, #personal-projects ul, .case-study ul{
     list-style: none;
     padding: 0;
 }
 
-.skill-category ul li, .project ul li, #education-certificates ul li, #hobbies ul li, #personal-projects ul li {
+.skill-category ul li, .project ul li, #education-certificates ul li, #hobbies ul li, #personal-projects ul li, .case-study ul li {
     background: #333;
     margin-bottom: 10px;
     padding: 10px;
@@ -108,6 +108,96 @@ section h2 {
 
 #home-link a{
     color: white;
+}
+
+.content-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.code-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 0px) and (max-width: 749px) {
+    .code-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+@media (min-width: 750px) {
+    .code-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.code-grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Needed for absolutely positioned p element */
+    overflow: hidden; /* Ensure that sliding element does not overflow */
+    height: 100px; 
+}
+
+.code-grid-item img {
+    max-width: 80px;
+    margin-bottom: 8px;
+}
+
+.code-grid-item p {
+    position: absolute;
+    bottom: -100%; /* Start below the parent container */
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6); /* Translucent white background */
+    color: #9B51E0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: bolder;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(100%); /* Start off-screen */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Animate the transform and opacity */
+    padding: 0;
+    border-radius: 5px;
+}
+
+.code-grid-item:hover p {
+    opacity: 1;
+    transform: translateY(0); /* Slide up */
+    bottom: 0; /* Move to the bottom of the parent container */
+}
+
+/* Linger effect */
+.code-grid-item p.linger {
+    opacity: 1;
+    transform: translateY(0); /* Keep in place */
+    bottom: 0;
+    transition: transform 0.3s ease 1s, opacity 0.3s ease 1s; /* Delay the hide transition by 1 second */
+}
+
+.icon-and-text {
+    display: flex;
+}
+
+.icon-and-text img{
+    height: 20px;
+    width: auto;
+    margin-right: 1%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.icon-and-text p {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 /* Link Styles */
@@ -142,24 +232,10 @@ a:hover {
     transform: translateY(-5px);
 }
 
-/* Styles for the container to ensure it takes up the full width of its parent */
-.image-banner-container {
-    width: 100%; /* Adjust this if you have a specific container width */
-    margin: auto; /* Centre it within the parent */
-    overflow: hidden; /* Ensure no overflow if the image is too large */
-}
-
-/* Styles for the image to fit the container */
-.image-banner-container img {
-    width: 100%; /* Make the image take up the full width of the container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove any unwanted space below the image */
-}
-
 /* Styles for the image container */
 .image-container {
     display: grid;
-    place-items: center; /* Center both horizontally and vertically */
+    place-items: center; 
 }
 
 /* Styles for the image */
@@ -180,10 +256,9 @@ a:hover {
 .paragraph-container p {
     text-align: justify; /* Justify text alignment */
     margin: 0 0 1em 0;   /* Add margin below each paragraph */
-    line-height: 1.6;    /* Optional: improves readability */
+    line-height: 1.6;    
 }
 
-/* Optional: Add some padding to the container */
 .paragraph-container {
-    padding: 20px; /* Adjust as needed */
+    padding: 20px; 
 }

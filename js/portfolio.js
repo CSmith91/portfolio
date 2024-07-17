@@ -59,3 +59,17 @@ document.addEventListener("DOMContentLoaded", function () {
     // auto-play carousel every 5 seconds
     setInterval(showNextImage, 5000);
 });
+
+document.querySelectorAll('.code-grid-item').forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        pElement.classList.remove('linger'); // Remove linger class to show immediately
+    });
+
+    item.addEventListener('mouseleave', () => {
+        const pElement = item.querySelector('p');
+        pElement.classList.add('linger');
+        setTimeout(() => {
+            pElement.classList.remove('linger');
+        }, 1000); // Match delay of hide transition + animation duration
+    });
+});

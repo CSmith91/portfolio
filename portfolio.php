@@ -10,26 +10,86 @@
                 <h2>Skills</h2>
                 <div class="skill-category">
                     <h3 onclick="toggleCollapse(this)">Coding</h3>
-                    <div class="content">
-                        <ul>
-                            <li>HTML</li>
-                            <li>JS</li>
-                            <li>CSS</li>
-                            <li>php</li>
-                            <li>ReactJS</li>
-                            <li>SQL</li>
-                            <li>HubL (A markdown language of HTML crossed with JS)</li>
-                            <li>LaTeX (A markdown language akin to HTML. Mention this to any STEM student to invoke nightmares)</li>
-                            <li>R (statistical software)</li>
-                            <li>MatLab (similar to Python or C)</li>
+                    <div class="content-grid">
+                        <ul class="code-grid">
+                            <li>
+                                <div class="code-grid-item">
+                                    <img src="./images/html.png" alt="HTML icon">
+                                    <p>HTML</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="code-grid-item">
+                                    <img src="./images/js.png" alt="JavaScript icon">
+                                    <p>JS</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="code-grid-item">
+                                    <img src="./images/css.png" alt="CSS icon">
+                                    <p>CSS</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="code-grid-item">
+                                    <img src="./images/php.png" alt="PHP icon">
+                                    <p>php</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="code-grid-item">
+                                    <img src="./images/react.png" alt="ReactJS icon">
+                                    <p>ReactJS</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="code-grid-item">
+                                    <img src="./images/sql.png" alt="SQL icon">
+                                    <p>SQL</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="code-grid-item">
+                                    <img src="./images/hubspot.png" alt="HubL icon">
+                                    <p>HubL</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="code-grid-item">
+                                    <img src="./images/tex.png" alt="LaTeX icon">
+                                    <p>LaTeX</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="code-grid-item">
+                                    <img src="./images/r.png" alt="R icon">
+                                    <p>R</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="code-grid-item">
+                                    <img src="./images/math.png" alt="MatLab icon">
+                                    <p>MatLab</p>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div class="skill-category">
                     <h3>CMS</h3>
                     <ul>
-                        <li>WordPress</li>
-                        <li>HubSpot (Certified)</li>
+                        <li>
+                            <div class="icon-and-text">
+                                <img src="./images/wordpress.png" alt="icon">
+                                <p>WordPress</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-and-text">
+                                <img src="./images/hubspot.png" alt="icon">
+                                <p>HubSpot (Certified)</p>
+                            </div>
+                        </li>
                     </ul>
                     <p>I have a lot of experience in WordPress and has been the source of most of my personal and professional projects. I chiefly design sites using Elementor, customise with Pods and enhance with CSS and JS where I need to.</p>
                 </div>
@@ -37,9 +97,24 @@
                     <h3>CRM</h3>
                     <p>I have garnered a lot of experience customising client CRM systems, either through establishing workflows and automations, or through integrations and custom code</p>
                     <ul>
-                        <li>HubSpot</li>
-                        <li>Pipedrive</li>
-                        <li>ActiveCampaign</li>
+                        <li>
+                            <div class="icon-and-text">
+                                <img src="./images/hubspot.png" alt="icon">
+                                <p>HubSpot</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-and-text">
+                                <img src="./images/pipedrive.png" alt="icon">
+                                <p>Pipedrive</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-and-text">
+                                <img src="./images/ac.png" alt="icon">
+                                <p>ActiveCampaign</p>
+                            </div>
+                        </li>
                     </ul>
                     <p>An example of using custom code was for the HS quote feature. Quotes did not automatically provide tax, and VAT had to be manually added to each quote. Using HubL, I was able to add this to client's quote automatically</p>
                 </div>
@@ -136,11 +211,12 @@
 
             <section id="flowbird-crm">
                 <h2>Flowbird CRM</h2>
-                <div class="image-banner-container">
-                    <img src="./images/flowbird_li.jpg" alt="flowbird banner" class="static">
-                </div>
-                <div class="case-study">
+                <div class="case-studies">
+                    <div class="image-container">
+                        <img src="./images/flowbird_li.jpg" alt="flowbird banner" class="static">
+                    </div>
                     <h3>Case Studies</h3>
+                    <div class="case-study">
                     <ul>
                         <li>Post Code Automation. This was one of my favourite projects. <a href="https://flowbird.co.uk/blog/filter-leads-pipedrive-with-make">More info here</a>.</li>
                     </ul>
@@ -171,47 +247,56 @@
 
             <section id="education-certificates">
                 <h2>Education & Certificates</h2>
-                <ul>
-                    <li>BSc(Hons) in Mathematics 2:1 at Exeter Univeristy</li>
-                    <li><a href="./docs/HyperionDev Certificate.pdf">Hyperion Dev Web Development Bootcamp</a></li>
-                </ul>
+                <div class="sub-section">
+                    <ul>
+                        <li>BSc(Hons) in Mathematics 2:1 at Exeter Univeristy</li>
+                        <li><a href="./docs/HyperionDev Certificate.pdf">Hyperion Dev Web Development Bootcamp</a></li>
+                    </ul>
+                    <h3>Final Year Group Project</h3>
+                    <ul>
+                        <li><a href="./docs/Final Project Full Writeup v0.7.pdf">Report typed and formatting using LaTeX.</a></li>
+                    </ul>
+                </div>
             </section>
 
             <section id="personal-projects">
                 <h2>Personal Projects</h2>
-                <ul>
-                    <li>
-                        See my <a href="https://applewell.xyz/miner/v3.4/miner.html">Javascript skills</a> with this clicker game! Note that this is a side-project and always updating, so feel free to stop by whenever!
-                    </li>
-                    <li>
-                        <a href="https://github.com/CSmith91/Hangman-React-Redux">A game of hangman using React-Redux</a>
-                    </li>
-                    <li>
-                        <a href="./docs/Character Gen.xlsx">Download my Dungeon & Dragons automatic character creator</a> - created entirely using Excel!
-                    </li>
-                </ul>
+                <div class="sub-section">
+                    <ul>
+                        <li>
+                            See my <a href="https://applewell.xyz/miner/v3.4/miner.html">Javascript skills</a> with this clicker game! Note that this is a side-project and always updating, so feel free to stop by whenever!
+                        </li>
+                        <li>
+                            <a href="https://github.com/CSmith91/Hangman-React-Redux">A game of hangman using React-Redux</a>
+                        </li>
+                        <li>
+                            <a href="./docs/Character Gen.xlsx">Download my Dungeon & Dragons automatic character creator</a> - created entirely using Excel!
+                        </li>
+                    </ul>
+                </div>
             </section>
 
             <section id="hobbies">
-                <h2>Hobbies</h2>
-                <ul>
-                    <li>Writing - I have written an epic fantasy novel at 289000 words and continue writing other works in the fantasy genre. You can view the prologue for my first complete novel <a href="./prologue.html">here</a>. Feedback welcome.</li>
-                    <li>
-                        Medieval Fighting Tournaments - It's exactly as it sounds. I don't partake, I'm just too skinny and not angry enough. Two teams dressed in historically accurate armour run at each other. If your knee touches the ground, you're out. 
-                        <!-- You can see a poorly shot video of this in Belmonte <a>here</a>. This was a regional tournament of all the qualifying regions of Spain in 2022. Valenica was a good team, but ultimately Madrid prevailed. -->
-                    </li>
-                    <li>History - kind of fits in with the above two.</li>
-                    <li>Reading - fits in with the above three. Favourites below:
-                    <ul>
-                        <li>Fiction - Game of Thrones (George RR Martin), Romance of the Three Kingdoms (Lo Kuan-chung / Luo Guanzhong) </li>
-                    </ul>
-                    <ul>
-                        <li>Non-Fiction - The Wager (David Grann), The Greatest Traitor (Ian Mortimer), Tricks of the Mind (Derren Brown)</li>
-                    </ul>
-                </li>
-                    <li>Board Games - Eldritch Horror, Gloomhaven, Root, Brass (Birmingham)</li>
-                    <li>Archery - I have my own composite bow and shoot left-handed, and always bruise my right forearm on my first shot and proceed to never do it again (until next session).</li>
-                </ul>
+                    <h2>Hobbies</h2>
+                    <div class="sub-section">
+                        <ul>
+                            <li>Writing - I have written an epic fantasy novel at 289000 words and continue writing other works in the fantasy genre. You can view the prologue for my first complete novel <a href="./prologue.html">here</a>. Feedback welcome.</li>
+                            <li>
+                                Medieval Fighting Tournaments - It's exactly as it sounds. I don't partake, I'm just too skinny and not angry enough. Two teams dressed in historically accurate armour run at each other. If your knee touches the ground, you're out. 
+                                <!-- You can see a poorly shot video of this in Belmonte <a>here</a>. This was a regional tournament of all the qualifying regions of Spain in 2022. Valenica was a good team, but ultimately Madrid prevailed. -->
+                            </li>
+                            <li>History - kind of fits in with the above two.</li>
+                            <li>Reading - fits in with the above three. Favourites below:
+                            <ul>
+                                <li>Fiction - Game of Thrones (George RR Martin), Romance of the Three Kingdoms (Lo Kuan-chung / Luo Guanzhong) </li>
+                            </ul>
+                            <ul>
+                                <li>Non-Fiction - The Wager (David Grann), The Greatest Traitor (Ian Mortimer), Tricks of the Mind (Derren Brown)</li>
+                            </ul>
+                            <li>Board Games - Eldritch Horror, Gloomhaven, Root, Brass (Birmingham)</li>
+                            <li>Archery - I have my own composite bow and shoot left-handed, and always bruise my right forearm on my first shot and proceed to never do it again (until next session).</li>
+                        </ul>
+                </div>
             </section>
         </main>
 
