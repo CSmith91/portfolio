@@ -22,11 +22,14 @@ function toggleCollapse(element) {
 document.addEventListener('mousemove', function(e) {
     const header = document.querySelector('header');
     const footer = document.querySelector('footer');
+    const nav = document.querySelector('nav ul');
     const x = e.clientX / window.innerWidth;
     const y = e.clientY / window.innerHeight;
     
-    header.style.background = `radial-gradient(circle at ${x * 100}% ${y * 100}%, #9B51E0, #331b49)`;
-    footer.style.background = `radial-gradient(circle at ${x * 100}% ${y * 100}%, #9B51E0, #331b49)`;
+    const gradient = `radial-gradient(circle at ${x * 100}% ${y * 100}%, #9B51E0, #331b49)`;
+    header.style.background = gradient;
+    footer.style.background = gradient;
+    // nav.style.background = gradient;
 });
 
 // this is for the image carousel
@@ -71,5 +74,22 @@ document.querySelectorAll('.code-grid-item').forEach(item => {
         setTimeout(() => {
             pElement.classList.remove('linger');
         }, 1000); // Match delay of hide transition + animation duration
+    });
+});
+
+// for the menu
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('nav ul');
+    const navClose = document.getElementById('menu-close');
+
+    menuToggle.addEventListener('click', function() {
+        navMenu.classList.toggle('show');
+        navClose.classList.toggle('show');
+    });
+
+    navClose.addEventListener('click', function() {
+        navMenu.classList.toggle('show');
+        navClose.classList.toggle('show');
     });
 });
