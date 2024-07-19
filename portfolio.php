@@ -9,8 +9,11 @@
             <section id="skills">
                 <h2>Skills</h2>
                 <div class="skill-category">
-                    <h3 onclick="toggleCollapse(this)">Coding Languages</h3>
-                    <div class="content-grid">
+                    <div onclick="toggleCollapse(this)" class="collapse-div">
+                        <h3>Coding Languages</h3>
+                        <img src="./images/white-collapse.png" alt="collapse">
+                    </div>
+                    <div class="content-grid" style="display: block;">
                         <ul class="code-grid">
                             <li>
                                 <div class="code-grid-item">
@@ -84,59 +87,64 @@
                     </div>
                 </div>
                 <!-- CRM / CMS section -->
-                <section class="cms-crm-section">
-                    <div class="cms-crm">
+                <section class="two-col-section">
+                    <div class="two-col">
                         <div class="skill-category">
-                            <div class="col1">
+                            <div onclick="toggleCollapse(this)" class="collapse-div col1">
                                 <h3>CMS</h3>
-                                <ul>
-                                    <li>
-                                        <div class="icon-and-text">
-                                            <img src="./images/wordpress.png" alt="icon">
-                                            <p>WordPress</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon-and-text">
-                                            <img src="./images/hubspot.png" alt="icon">
-                                            <p>HubSpot (Certified)</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <p>I have a lot of experience in WordPress and has been the source of most of my personal and professional projects. I chiefly design sites using Elementor, customise with Pods and enhance with CSS and JS where I need to.</p>
+                                <img src="./images/white-collapse.png" alt="collapse">
                             </div>
+                            <ul>
+                                <li>
+                                    <div class="icon-and-text">
+                                        <img src="./images/wordpress.png" alt="icon">
+                                        <p>WordPress</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon-and-text">
+                                        <img src="./images/hubspot.png" alt="icon">
+                                        <p>HubSpot (Certified)</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p>I have a lot of experience in WordPress and has been the source of most of my personal and professional projects. I chiefly design sites using Elementor, customise with Pods and enhance with CSS and JS where I need to.</p>
                         </div>
                         <div class="skill-category">
-                            <div class="col1">
+                            <div onclick="toggleCollapse(this)" class="collapse-div col1">
                                 <h3>CRM</h3>
-                                <p>I have garnered a lot of experience customising client CRM systems, either through establishing workflows and automations, or through integrations and custom code</p>
-                                <ul>
-                                    <li>
-                                        <div class="icon-and-text">
-                                            <img src="./images/hubspot.png" alt="icon">
-                                            <p>HubSpot</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon-and-text">
-                                            <img src="./images/pipedrive.png" alt="icon">
-                                            <p>Pipedrive</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon-and-text">
-                                            <img src="./images/ac.png" alt="icon">
-                                            <p>ActiveCampaign</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <p>An example of using custom code was for the HS quote feature. Quotes did not automatically provide tax, and VAT had to be manually added to each quote. Using HubL, I was able to add this to client's quote automatically</p>
+                                <img src="./images/white-collapse.png" alt="collapse">
                             </div>
+                            <p>I have garnered a lot of experience customising client CRM systems, either through establishing workflows and automations, or through integrations and custom code</p>
+                            <ul>
+                                <li>
+                                    <div class="icon-and-text">
+                                        <img src="./images/hubspot.png" alt="icon">
+                                        <p>HubSpot</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon-and-text">
+                                        <img src="./images/pipedrive.png" alt="icon">
+                                        <p>Pipedrive</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon-and-text">
+                                        <img src="./images/ac.png" alt="icon">
+                                        <p>ActiveCampaign</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p>An example of using custom code was for the HS quote feature. Quotes did not automatically provide tax, and VAT had to be manually added to each quote. Using HubL, I was able to add this to client's quote automatically</p>
                         </div>
                     </div>
                 </section>
                 <div class="skill-category">
-                    <h3>Data & Reporting</h3>
+                    <div onclick="toggleCollapse(this)" class="collapse-div">
+                        <h3>Data & Reporting</h3>
+                        <img src="./images/white-collapse.png" alt="collapse">
+                    </div>
                     <ul>
                         <li>De-duplication</li>
                         <li>Data validation</li>
@@ -147,39 +155,63 @@
                     </ul>
                     <p>This is primarily migrating client contact data between CRMs. This also includes importing other objects, like deals/leads, companies/organisations and tickets</p>
                 </div>
-                <div class="skill-category">
-                    <h3>Other Website Tools</h3>
-                    <ul>
-                        <li>
-                            <div class="icon-and-text">
-                                <img src="./images/google-analytics.png" alt="icon">
-                                <p>Google Analytics</p>
+                <!-- integration and web tool section -->
+                <section class="two-col-section">
+                    <div class="two-col">
+                        <div class="skill-category">
+                            <div onclick="toggleCollapse(this)" class="collapse-div col1">
+                                <h3>Integration Tools</h3>
+                                <img src="./images/white-collapse.png" alt="collapse">
                             </div>
-                        </li>
-                        <li>
-                        <div class="icon-and-text">
-                                <img src="./images/woo.png" alt="icon">
-                                <p>WooCommerce</p>
+                            <ul>
+                                <li>
+                                    <div class="icon-and-text">
+                                        <img src="./images/make.png" alt="icon">
+                                        <p>Make (formerly Integromat)</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon-and-text">
+                                        <img src="./images/bpa.png" alt="icon">
+                                        <p>BPA platform (uses SQL)</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p>Make is a powerful tool that ultilises API connectors and allows us to extract data from one platform and feed into another, using triggers or setting up automations. I have integrated various ERP systems (be they Sage, Xero or custom-built) into CRM systems, linked MailChimp subscriber information to CRMs and form data from websites and spreadsheets.</p>
+                        </div>
+                        <div class="skill-category">
+                            <div onclick="toggleCollapse(this)" class="collapse-div col1">
+                                <h3>Website Tools</h3>
+                                <img src="./images/white-collapse.png" alt="collapse">
                             </div>
-                        </li>
-                        <li>
-                            <div class="icon-and-text">
-                                <img src="./images/shopify.png" alt="icon">
-                                <p>Shopify</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                            <ul>
+                                <li>
+                                    <div class="icon-and-text">
+                                        <img src="./images/google-analytics.png" alt="icon">
+                                        <p>Google Analytics</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon-and-text">
+                                        <img src="./images/woo.png" alt="icon">
+                                        <p>WooCommerce</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon-and-text">
+                                        <img src="./images/shopify.png" alt="icon">
+                                        <p>Shopify</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </section>
                 <div class="skill-category">
-                    <h3>Integration Tools</h3>
-                    <ul>
-                        <li>Make (formerly Integromat)</li>
-                        <li>BPA (uses SQL)</li>
-                    </ul>
-                    <p>Make is a powerful tool that ultilises API connectors and allows us to extract data from one platform and feed into another, using triggers or setting up automations. I have integrated various ERP systems (be they Sage, Xero or custom-built) into CRM systems, linked MailChimp subscriber information to CRMs and form data from websites and spreadsheets.</p>
-                </div>
-                <div class="skill-category">
-                    <h3>Other Technical Skills</h3>
+                    <div onclick="toggleCollapse(this)" class="collapse-div">
+                        <h3>Other Technical Skills</h3>
+                        <img src="./images/white-collapse.png" alt="collapse">
+                    </div>
                     <ul>
                         <li>
                             <div class="icon-and-text">
@@ -202,19 +234,19 @@
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Soft Skills</h3>
+                    <div onclick="toggleCollapse(this)" class="collapse-div">
+                        <h3>Soft Skills</h3>
+                        <img src="./images/white-collapse.png" alt="collapse">
+                    </div>
                     <ul>
                         <li>Team Management - including hiring and training staff</li>
                         <li>Project Management - including collaboration</li>
-                        <li>Highly Interpersonal - it feels contradictory to include this one on the list, but feedback I've received from friends, colleagues and bosses is I'm popular and well liked and generate loyal clients without much effort - but it takes two for any bi-lateral relationship. I think my ability to listen without judgement often fosters stronger relationships. If you care for personality tests, I tend to get <a href="https://www.16personalities.com/infjs-at-work" target="_blank">INFJ on Myers-Briggs</a>, <a href="https://enneagramuniverse.com/enneagram/learn/enneagram-wings/enneagram_1w9/" target="_blank">Type 1w9 wing on the Enneagram</a> and <a href="https://www.discprofile.com/what-is-disc/disc-styles/conscientiousness" target="_blank">CS style on the DISC test</a>. All these point to a personality that prides themselves on their work and recognising and respecting others. It's not really for me to say what I'm like, though.</li>
+                        <li>Highly Interpersonal - it feels contradictory to include this one on the list, but feedback I've received from friends, colleagues and bosses is I'm popular and well liked and generate loyal clients without much effort - but it takes two for any bi-lateral relationship. I think my ability to listen without judgement often fosters stronger relationships. If you care for personality tests, I tend to get <a href="https://www.16personalities.com/infjs-at-work" target="_blank">INFJ on Myers-Briggs</a>, <a href="https://enneagramuniverse.com/enneagram/learn/enneagram-wings/enneagram_1w9/" target="_blank">Type 1w9 wing on the Enneagram</a> and <a href="https://www.discprofile.com/disc-styles/conscientiousness/cs-disc-personality" target="_blank">CS style on the DISC test</a>. All these point to a personality that prides themselves on their work and recognising and respecting others. It's not really for me to say what I'm like, though.</li>
                     </ul>
                 </div>
             </section>
         </main>
 
-        <a href="#top" class="back-to-top" id="backToTop">
-            &#8679; <!-- Unicode for up arrow -->
-        </a>
         <script src="./js/portfolio.js"></script>
 
         <footer><?php    

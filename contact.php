@@ -55,9 +55,6 @@
         </section>   
     </main>
 
-    <a href="#top" class="back-to-top" id="backToTop">
-        &#8679; <!-- Unicode for up arrow -->
-    </a>
     <script src="./js/portfolio.js"></script>
 
     <footer><?php    

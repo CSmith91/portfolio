@@ -3,6 +3,7 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title><?php echo $pageTitle; ?></title> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/stylesheet.css">
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/carousel.css">
@@ -24,5 +25,8 @@
             <li><a href="./contact.php">Contact Me</a></li>
             <button id="menu-close"> X </button>
         </ul>
-    </nav>            
+    </nav>
+    <a href="#top" class="back-to-top" id="backToTop">
+        <img src="./images/white-up.png" alt="&#8679">
+        </a>          
 </header>

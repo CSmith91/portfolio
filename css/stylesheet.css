@@ -1,12 +1,13 @@
 /* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #121212;
     color: #f4f4f4;
 }
+
 
 main {
     max-width: 1200px;
@@ -60,6 +61,10 @@ section h2 {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
+.skill-category.collapsed {
+    margin-bottom: 20px;
+}
+
 .skill-category h3, .project h3 {
     margin-top: 0;
 }
@@ -74,6 +79,32 @@ section h2 {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
+    position: relative; /* Needed for the pseudo-element */
+    overflow: hidden; /* Hide the flash overflow */
+    transition: transform 0.3s ease; /* Smooth transition for the movement */
+}
+
+/* Hover effect for moving the item up and to the right */
+.skill-category ul li:hover, .project ul li:hover, #education-certificates ul li:hover, #hobbies ul li:hover, #personal-projects ul li:hover, .case-study ul li:hover {
+    transform: translate(-5px, -5px); /* Shift up and to the right */
+}
+
+/* Pseudo-element for the moving flash */
+.skill-category ul li::before, .project ul li::before, #education-certificates ul li::before, #hobbies ul li::before, #personal-projects ul li::before, .case-study ul li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start from outside the left edge */
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); /* Flash effect */
+    transform: skewX(-20deg); /* Skew to create the flash effect */
+    transition: left 0.3s ease; /* Smooth transition for the flash movement */
+}
+
+/* Hover effect to animate the flash */
+.skill-category ul li:hover::before, .project ul li:hover::before, #education-certificates ul li:hover::before, #hobbies ul li:hover::before, #personal-projects ul li:hover::before, .case-study ul li:hover::before {
+    left: 100%; /* Move the flash to the right */
 }
 
 .skill-category p, .project p {
@@ -85,8 +116,35 @@ section h2 {
 }
 
 .content-grid {
-    display: flex;
     justify-content: center;
+}
+
+.collapse-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.collapse-div h3 {
+    margin: 0;
+}
+
+.collapse-div img {
+    padding-right: 10px;
+    width: 25px;
+    height: auto;
+}
+
+/* This is the toggled class for the header */
+.collapsed {
+    margin-bottom: 0px;
+}
+
+.collapsed img {
+    transform: scaleY(-1);
+    transition: transform 0.5s ease; 
 }
 
 .code-grid {
@@ -236,8 +294,9 @@ a:hover {
     right: 40px;
     background-color: #331b49;
     color: white;
-    padding: 10px 15px;
-    border-radius: 50%;
+    width: 45px;
+    height: 45px; 
+    border-radius: 10px;
     text-align: center;
     text-decoration: none;
     font-size: 24px;
@@ -245,6 +304,12 @@ a:hover {
     display: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
     z-index: 1000;
+}
+
+.back-to-top img {
+    padding-top: 7px;
+    width: 30px; 
+    height: 30px; 
 }
 
 .back-to-top:hover {
@@ -283,35 +348,39 @@ a:hover {
 }
 
 /* Reset default list styling */
-.cms-crm {
+.two-col {
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap onto new lines */
     gap: 20px; /* Adjust the gap between columns */
 }
 
 /* Style each skill category */
-.cms-crm .skill-category {
+.two-col .skill-category {
     flex: 1; /* Make each category take equal space */
     max-width: calc(50% - 20px); /* Limit each column to 50% width minus the gap */
+    transition: max-width 0.5s ease; /* Smooth transition for collapsing */
+}
+
+/* Handle collapsed state */
+.two-col .skill-category.collapsed {
+    max-height: 0; /* Shrink to zero width when collapsed */
+    overflow: hidden; /* Hide overflow */
+    transition: max-height 0.5s ease;
+    padding-bottom: 50px;
 }
 
 @media (max-width: 768px) {
     /* Adjust layout for smaller screens */
-    .cms-crm .skill-category {
+    .two-col .skill-category {
         flex: 1 0 100%; /* Take full width on smaller screens */
         max-width: 96%; /* Ensure it takes full width */
         gap: 10px; /* Adjust the gap between columns */
         margin-bottom: 0;
     }
-    .cms-crm-section {
+    .two-col-section {
         padding-right: 4%;
         margin-bottom: 20px;
     }
-}
-
-/* Style headings */
-.col1 h3 {
-    font-size: 1.5rem;
 }
 
 /* Style paragraphs */

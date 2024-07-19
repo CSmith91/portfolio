@@ -30,7 +30,7 @@
                     <p>The goal was to create a website that displayed the various lots that the client puts to auction in a catalogue style. The requirements were:</p>
                     <ul>
                         <li>Linking each lot to its respective auction</li>
-                        <li>Linking each auction to its category, e.g. 'Jewelry'</li>
+                        <li>Linking each auction to its category, e.g. 'jewellery'</li>
                         <li>Creating a back-office on a CMS that allows a non-technical client to add these lots easily</li>
                     </ul>
                     <p>
@@ -151,9 +151,6 @@
             </section>
         </main>
 
-        <a href="#top" class="back-to-top" id="backToTop">
-            &#8679; <!-- Unicode for up arrow -->
-        </a>
         <script src="./js/portfolio.js"></script>
 
         <footer><?php    

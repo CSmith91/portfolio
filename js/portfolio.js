@@ -10,11 +10,36 @@ window.onscroll = function() {
 
 // collapsable sections
 function toggleCollapse(element) {
+    const skillCategory = element.closest('.skill-category');
     const content = element.nextElementSibling;
-    if (content.style.display === "none" || content.style.display === "") {
+    const container = element;
+    const child = element.lastElementChild;
+    if (content.style.display === "none") {
         content.style.display = "block";
+        skillCategory.classList.toggle('collapsed');
+        container.classList.toggle('collapsed');
+        child.classList.toggle('collapsed');
+        if(content.nextElementSibling){
+            const extra = content.nextElementSibling
+            extra.style.display = "block";
+            if(extra.nextElementSibling){
+                const final = extra.nextElementSibling
+                final.style.display = "block";
+            }
+        }
     } else {
         content.style.display = "none";
+        skillCategory.classList.toggle('collapsed');
+        container.classList.toggle('collapsed');
+        child.classList.toggle('collapsed');
+        if(content.nextElementSibling){
+            const extra = content.nextElementSibling
+            extra.style.display = "none";
+            if(extra.nextElementSibling){
+                const final = extra.nextElementSibling
+                final.style.display = "none";
+            }
+        }
     }
 }
 
@@ -22,7 +47,7 @@ function toggleCollapse(element) {
 document.addEventListener('mousemove', function(e) {
     const header = document.querySelector('header');
     const footer = document.querySelector('footer');
-    const nav = document.querySelector('nav ul');
+    //const nav = document.querySelector('nav ul');
     const x = e.clientX / window.innerWidth;
     const y = e.clientY / window.innerHeight;
     
@@ -63,10 +88,11 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(showNextImage, 5000);
 });
 
+// mouse-over popups
 document.querySelectorAll('.code-grid-item').forEach(item => {
-    item.addEventListener('mouseenter', () => {
-        pElement.classList.remove('linger'); // Remove linger class to show immediately
-    });
+    // item.addEventListener('mouseenter', () => {
+    //     pElement.classList.remove('linger'); // Remove linger class to show immediately
+    // });
 
     item.addEventListener('mouseleave', () => {
         const pElement = item.querySelector('p');
