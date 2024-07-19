@@ -79,18 +79,21 @@ section h2 {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
+}
+
+.skill-category ul li:not(.sneak1):not(.sneak2) {
     position: relative; /* Needed for the pseudo-element */
     overflow: hidden; /* Hide the flash overflow */
     transition: transform 0.3s ease; /* Smooth transition for the movement */
 }
 
 /* Hover effect for moving the item up and to the right */
-.skill-category ul li:hover, .project ul li:hover, #education-certificates ul li:hover, #hobbies ul li:hover, #personal-projects ul li:hover, .case-study ul li:hover {
+.skill-category ul li:not(.sneak1):not(.sneak2):hover, .project ul li:hover, #education-certificates ul li:hover, #hobbies ul li:hover, #personal-projects ul li:hover, .case-study ul li:hover {
     transform: translate(-5px, -5px); /* Shift up and to the right */
 }
 
 /* Pseudo-element for the moving flash */
-.skill-category ul li::before, .project ul li::before, #education-certificates ul li::before, #hobbies ul li::before, #personal-projects ul li::before, .case-study ul li::before {
+.skill-category ul li:not(.sneak1):not(.sneak2)::before, .project ul li::before, #education-certificates ul li::before, #hobbies ul li::before, #personal-projects ul li::before, .case-study ul li::before {
     content: '';
     position: absolute;
     top: 0;
@@ -103,7 +106,7 @@ section h2 {
 }
 
 /* Hover effect to animate the flash */
-.skill-category ul li:hover::before, .project ul li:hover::before, #education-certificates ul li:hover::before, #hobbies ul li:hover::before, #personal-projects ul li:hover::before, .case-study ul li:hover::before {
+.skill-category ul li:not(.sneak1):not(.sneak2):hover::before, .project ul li:hover::before, #education-certificates ul li:hover::before, #hobbies ul li:hover::before, #personal-projects ul li:hover::before, .case-study ul li:hover::before {
     left: 100%; /* Move the flash to the right */
 }
 
