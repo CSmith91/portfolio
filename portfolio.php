@@ -200,7 +200,7 @@
                                 <li>
                                     <div class="icon-and-text">
                                         <img src="./images/shopify.png" alt="icon">
-                                        <p>Shopify</p>
+                                        <p>Shopify - <a href="./projects.php#shopify-ex">case study here</a>.</p>
                                     </div>
                                 </li>
                             </ul>
