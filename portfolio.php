@@ -187,6 +187,12 @@
                             <ul>
                                 <li>
                                     <div class="icon-and-text">
+                                        <img src="./images/cpanel.png" alt="cpanel icon">
+                                        <p>cPanel</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon-and-text">
                                         <img src="./images/google-analytics.png" alt="icon">
                                         <p>Google Analytics</p>
                                     </div>
@@ -200,7 +206,7 @@
                                 <li>
                                     <div class="icon-and-text">
                                         <img src="./images/shopify.png" alt="icon">
-                                        <p>Shopify - <a href="./projects.php#shopify-ex">case study here</a>.</p>
+                                        <p>Shopify - <a href="./projects.php#shopify-ex">case study</a></p>
                                     </div>
                                 </li>
                             </ul>
@@ -213,6 +219,12 @@
                         <img src="./images/white-collapse.png" alt="collapse">
                     </div>
                     <ul>
+                        <li>
+                            <div class="icon-and-text">
+                                <img src="./images/github.png" alt="git icon">
+                                <p>Github & Git Version Control</p>
+                            </div>
+                        </li>
                         <li>
                             <div class="icon-and-text">
                                 <img src="./images/excel.png" alt="icon">
@@ -239,8 +251,9 @@
                         <img src="./images/white-collapse.png" alt="collapse">
                     </div>
                     <ul>
-                        <li>Team Management - including hiring and training staff</li>
-                        <li>Project Management - including collaboration</li>
+                        <li>Team Management - including onboarding and coaching staff</li>
+                        <li>Project Management - including collaboration with other teams</li>
+                        <li>Communicative - including speaking with non-technical clients, and similarly 'translating' technical talk into easy-to-understand analogies.</li>
                         <li>Highly Interpersonal - it feels contradictory to include this one on the list, but feedback I've received from friends, colleagues and bosses is I'm popular and well liked and generate loyal clients without much effort - but it takes two for any bi-lateral relationship. I think my ability to listen without judgement often fosters stronger relationships. If you care for personality tests, I tend to get <a href="https://www.16personalities.com/infjs-at-work" target="_blank">INFJ on Myers-Briggs</a>, <a href="https://enneagramuniverse.com/enneagram/learn/enneagram-wings/enneagram_1w9/" target="_blank">Type 1w9 wing on the Enneagram</a> and <a href="https://www.discprofile.com/disc-styles/conscientiousness/cs-disc-personality" target="_blank">CS style on the DISC test</a>. All these point to a personality that prides themselves on their work and recognising and respecting others. It's not really for me to say what I'm like, though.</li>
                     </ul>
                 </div>
