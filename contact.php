@@ -50,6 +50,9 @@
                 </form>
             </div>
         </section>
+        <section>
+        <h3>You can also reach out to me on <a href="https://www.linkedin.com/in/chris-smith-02b45125a/" target="_blank">LinkedIn</a>!</h3>
+        </section>   
     </main>
 
     <script src="./js/portfolio.js"></script>
