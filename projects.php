@@ -10,7 +10,7 @@
                 <h2>Projects</h2>
                 <div class="project">
                     <h3>Ibbett Mosely Auctions</h3>
-                    <p>This site is live and you can view it <a href="https://ibbettmoselyauctions.co.uk/">here</a>.</p>
+                    <p>This site is live and you can view it <a href="https://ibbettmoselyauctions.co.uk/" target="_blank">here</a>.</p>
                     <div class="image-container">
                             <img src="./images/ima_main.png" alt="main page" class="static" style="align-items: center">
                         </div>
@@ -40,7 +40,7 @@
                 </div>   
                 <div class="project">
                     <h3>X-Dental Lab</h3>
-                    <p>This site is live and you can view it <a href="https://xdentallab.com.au/">here</a>.</p>
+                    <p>This site is live and you can view it <a href="https://xdentallab.com.au/" target="_blank">here</a>.</p>
                     <div class="image-container">
                             <img src="./images/xdl_home.png" alt="xdl home" class="static" style="align-items: center">
                         </div>

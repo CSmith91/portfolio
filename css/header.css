@@ -1,0 +1,34 @@
+.top-strip-container {
+    display: flex;
+    align-items: center; /* vertical centring */
+    justify-content: center;
+}
+
+#home-link {
+    margin: 0; /* Remove default margin from h1 */
+    padding-right: 10px;
+}
+
+#home-link a{
+    color: white;
+}
+
+.top-strip {
+    display: flex;
+    align-items: center;
+}
+
+.mode-div img{
+    cursor: pointer;
+    width: 25px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: -5px;
+    border-radius: 50%;
+}
+
+.mode-div img:hover {
+    /* cursor: pointer; */
+    transition-duration: 0.5s;
+    background-color: #fad1195e;
+}
